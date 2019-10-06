@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4478986648811997824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3314001249562551652}
+  - component: {fileID: 666409436}
+  - component: {fileID: 474910149}
+  - component: {fileID: 7879980392825938752}
+  - component: {fileID: 7273806104766182380}
+  - component: {fileID: 5199695462467618410}
+  m_Layer: 12
+  m_Name: enemyShip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3314001249562551652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4478986648811997824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &666409436
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4478986648811997824}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &474910149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4478986648811997824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74ea9983bdf1e9478600ee5652dc445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 6
+  Range: 6
+  fleeRange: 5
+  rotationSpeed: 5
+  exploshion: {fileID: -1880171140323432543, guid: c0301be0d27b4214a90d6b1a9d7d5fc3,
+    type: 3}
+  behaviorType: 1
+--- !u!114 &7879980392825938752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4478986648811997824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae623064ab76304b8fcb34cc3031291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camRatio: 0
+  Bullet: {fileID: 6449461249521873262, guid: a290e7af1b403fc4f914d1a87a60010b, type: 3}
+  missleSpeed: 5
+  reloadTime: 0.1
+  UpShoot: 3
+  LeftShoot: 0
+  BottomShoot: 0
+  RightShoot: 0
+  reducedReload: 1
+  Angle: 10
+  damage: 10
+  bulletScale: 1
+  missleLife: 1
+  missleLifeTime: 15
+  OverLoad: 0
+  OverloadRatio: 0.08
+  OverloadDownRatio: 0.01
+  deviationRange: 10
+  missleColor: {r: 0, g: 0, b: 0, a: 0}
+  range: 0.8
+  bulletsPerSeoncd: 0
+  fireSound: {fileID: 0}
+--- !u!114 &7273806104766182380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4478986648811997824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a2ba9d13882e5c4daf40c9ebf3ca676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 100
+  maxDamage: -1
+  hitDamage: 3
+  isPlayer: 0
+  AlwaysOne: 0
+--- !u!114 &5199695462467618410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4478986648811997824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd64d3ab934514449b0fea6f156bd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

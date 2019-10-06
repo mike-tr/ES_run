@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3277844223259811283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899347557834026047}
+  - component: {fileID: 3271282804147386138}
+  - component: {fileID: 1848452457466941608}
+  m_Layer: 10
+  m_Name: meteor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1899347557834026047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277844223259811283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.878, y: 5.888638, z: -1.5388354}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &3271282804147386138
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277844223259811283}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1848452457466941608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277844223259811283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476a62a2c9bccac4e94f476953b83e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exploshion_time: 0
+  scale: 0.8
+  dead: 0
+  SlowFactor: 1
+  damage: 15
+  maxLifeTime: 20
+  velocity: {x: 0, y: 0, z: 0}
+  followSpeed: 5
+  exploshion: {fileID: -1880171140323432543, guid: c0301be0d27b4214a90d6b1a9d7d5fc3,
+    type: 3}
+  setLifeLoad: 2000
+  RandomScale: 1
+  scaleMinMAx: {x: 0.7, y: 1.3}
+  target: {fileID: 0}
+  cameraSpeedRanges: {x: 0.25, y: 0.75}
+  independent: 1
+  renderer: {fileID: 0}
+  lifeTime: 0
+  collidedUnits: []
+  smallExplosion: {fileID: 2596985694155344455, guid: b96e3b14f0669d04fa42528205a78f2d,
+    type: 3}
